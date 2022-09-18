@@ -4,11 +4,9 @@ if [ $# -lt 2 ]
     exit
 fi
 
-export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 export RUNTIME_LOCATION=us-central1
 export ANALYTICS_LOCATION=us-central1
 
-exit
 export user=$(gcloud config get-value account)
 exit
 if [ -z "${user}" ]; then
@@ -16,6 +14,7 @@ if [ -z "${user}" ]; then
 fi
 
 gcloud config set project $1
+export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 
 retVal=$?
 if [ $retVal -ne 0 ]; then
