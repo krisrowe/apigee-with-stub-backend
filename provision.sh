@@ -24,7 +24,7 @@ else
    echo "Project set"
 fi
 
-#sudo docker pull gcr.io/apijamkr/stubbed-service
+sudo docker pull gcr.io/apijamkr/stubbed-service
 
 # The --no-address prevents an external IP from being assigned. Not only
 # is this the intention, but it's also required by some organizations' policies.
