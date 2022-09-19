@@ -7,6 +7,6 @@ Script to quickly provision a stubbed backend service on GCP with a private IP a
 Clone the repo, then run the following commands.
 
 ```
-chmod +x provision.sh
+chmod +x [provision.sh]
 ./provision.sh myprojectid mynetwork
 ```
