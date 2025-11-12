@@ -1,0 +1,13 @@
+<APIProxy revision="2" name="weather_service">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1762938049251</CreatedAt>
+    <LastModifiedAt>1762938049251</LastModifiedAt>
+    <BasePaths>/weather/v1/stations</BasePaths>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
